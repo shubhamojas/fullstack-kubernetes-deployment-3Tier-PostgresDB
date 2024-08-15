@@ -166,10 +166,10 @@ data "aws_security_group" "selected" {
     subnet_ids      = [data.aws_subnet.subnet-1.id, data.aws_subnet.subnet-2.id]
     capacity_type   = "ON_DEMAND"
     disk_size       = 20
-    instance_types  = ["t2.small"]
+    instance_types  = ["t2.medium"]
 
     remote_access {
-      ec2_ssh_key               = "provisioner"
+      ec2_ssh_key               = "dockerdevops"
       source_security_group_ids = [data.aws_security_group.selected.id]
     }
 
