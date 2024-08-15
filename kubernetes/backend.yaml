@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: flask-backend
-        image: 058264355804.dkr.ecr.ap-south-1.amazonaws.com/three-tier-backend:2
+        image: 058264355804.dkr.ecr.ap-south-1.amazonaws.com/three-tier-backend:3
           #imagePullPolicy: Never
         ports:
         - containerPort: 5000
